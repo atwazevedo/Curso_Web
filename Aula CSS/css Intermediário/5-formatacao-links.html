@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+    <head>
+    <title>Formatando Links</title>
+    <meta charset="utf-8"/>
+    <style type= "text/css">
+      /*Estados em que podemos formatar os links.*/ 
+      /*1ºEstado: Links não vistados, que são aqueles que não foram formatados*/
+      a{
+        text-decoration:none;
+        padding: 5px;
+      }
+      a:link{
+          color:#b9c941;
+      }
+      /*2ºEstado: Links Visitados*/
+      a:visited{
+          color:#965913;
+      }
+      /*3º Estado: Estado Hover, passar o cursos sobre o link*/
+      a:hover{
+          color:#f9faf5;
+          background:#86941c;
+      }
+      /*4º Estado: Ativos, quando clicado*/
+      a:active{
+          color:#5a41c9;
+      }
+
+    </style>
+    </head>
+    
+    <body>
+    <a href="https://www.google.com.br">Google</a> |
+    <a href="https://www.terra.com.br">Terra</a> |
+    <a href="https://youtube.com.br">You-tube</a> |
+    </body>
+</html>

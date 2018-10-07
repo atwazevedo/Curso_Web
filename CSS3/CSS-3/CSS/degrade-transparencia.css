@@ -1,0 +1,48 @@
+#box{
+    width:300px;
+    height:300px;
+    margin-left:15px;
+    float: left;/*Propriedade para separar 
+                as divs*/
+    background:url("../img/camera.png");
+}
+#box h1{
+    background:rgba(255,255,255,0.2);
+    border-bottom:2px solid white; 
+}
+
+
+/*Pode-se utilizar no background uma 
+configuração de cores conhecida como
+RGB, em que você poderá juntar 3 cores 
+para formar 1 só. E você também pode 
+utilizar o RGBA, o "A", significa Alfa, e
+será quem dará um nível de transparência 
+para a cor. Sendo 0 o menor valor possível 
+e 1 o maior valor.*/
+
+/*Desta forma, #box h1 
+você irá formatar somente o h1 
+que está dentro do box*/
+
+/* Degrade*/
+#box2{
+    width:300px;
+    height:300px;
+    margin-left:10px; /*Propriedade para separar 
+                        as divs*/
+    float: left;/*Propriedade para separar 
+                as divs*/
+    /*background:linear-gradient(to right, red,yellow)*/
+    /*background:linear-gradient(150deg, red,yellow)*/
+    background:radial-gradient(red,yellow,red)
+}
+/* A propriedade linear-gradiente serve para inserir um degrade
+no box, sendo que, quando colocamos a informação (to right,
+to left, to bottom) nós informamos de qual direção queremos
+que o efeito degrade inicie. Ou pode-se utilizar o termo (deg)
+que seria a propriedade para apropriar uma rotação.
+Com a propriedade, radial-gradient, nós temos como colocar
+um efeito circular, dentro do box*/
+
+

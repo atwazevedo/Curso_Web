@@ -1,0 +1,72 @@
+<!doctype>
+<html>
+    <head>
+        <title>Elementos Flutuantes</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+        #resumo-noticia{
+            border:1px solid gray;
+            width:300px;
+            height:300px;
+            float: left; /*Esta propriedade tem como função levar a caixa da div para a
+            posição desejada na página, left right*/
+            margin: 10px;
+            padding:3px;
+        }
+        .clear{
+            clear: both;/* Este comando serve para tirar o efeito do float que se aplica nos 
+            demais elementos que forem criados logo no body, logo após o elemento com o float.*/
+        }
+        </style>
+    </head>
+  <!--  ======================================================================= -->
+       
+    <body>
+        <div id="resumo-noticia">
+            <h2>Elementos Flutuantes 1</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Donec eleifend non diam id vulputate. Maecenas lorem nibh, sagittis 
+            eu ante eu, pharetra elementum ipsum. Vivamus lorem sapien, maximus 
+            vel magna ut, rhoncus ultricies felis. Nullam aliquet mollis leo quis 
+            pharetra
+            </p>
+        </div>
+
+        <div id="resumo-noticia">
+                <h2>Elementos Flutuantes 2 </h2>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec eleifend non diam id vulputate. Maecenas lorem nibh, sagittis 
+                eu ante eu, pharetra elementum ipsum. Vivamus lorem sapien, maximus 
+                vel magna ut, rhoncus ultricies felis. Nullam aliquet mollis leo quis 
+                pharetra
+                </p>
+            </div>
+        
+            <div id="resumo-noticia">
+                <h2>Elementos Flutuantes 3</h2>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec eleifend non diam id vulputate. Maecenas lorem nibh, sagittis 
+                eu ante eu, pharetra elementum ipsum. Vivamus lorem sapien, maximus 
+                vel magna ut, rhoncus ultricies felis. Nullam aliquet mollis leo quis 
+                pharetra
+                </p>
+            </div>
+            <div class="clear">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec eleifend non diam id vulputate. Maecenas lorem nibh, sagittis 
+                eu ante eu, pharetra elementum ipsum. Vivamus lorem sapien, maximus 
+                vel magna ut, rhoncus ultricies felis. Nullam aliquet mollis leo quis 
+                pharetra
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec eleifend non diam id vulputate. Maecenas lorem nibh, sagittis 
+                eu ante eu, pharetra elementum ipsum. Vivamus lorem sapien, maximus 
+                vel magna ut, rhoncus ultricies felis. Nullam aliquet mollis leo quis 
+                pharetra 
+            </div>
+        </div>
+        
+    </body>
+</html>

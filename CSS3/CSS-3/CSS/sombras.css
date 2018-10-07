@@ -1,0 +1,27 @@
+#box{
+    width:400px;
+    height:400px;
+    margin:50px auto;
+    padding:8px;
+    background:#009670;
+    /*box-shadow:10px 4px 2px black;*/
+    box-shadow:20px 10px 2px black,-20px -10px 2px gray;
+    /* Desta forma você consegue o efeito de duplicação
+    da sombra*/
+
+}
+
+#box h1 {
+    color:white;
+    font-size:60px;
+    /*text-shadow:15px 5px 20px black;*/
+    /*Com esta propriedade, é possível que possa ser
+    inserido sombras em um texto, sendo que a primeira
+    propriedade faz com que a sombra se moviemnte  de forma
+    horizontal direita e esquerda e a segunda, para 
+    cima e para baixo. E o terceiro valor, informa o 
+    blur, ou seja, desfoca a sobra, formando "borrao",
+    e o valor regula a sua intensidade*/
+    /*text-shadow:20px 20px rgba(0,0,0,0.5);*/
+    text-shadow:15px 5px black;
+}

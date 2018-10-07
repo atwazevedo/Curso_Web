@@ -1,0 +1,68 @@
+<!doctype.html>
+<html>
+    <head>
+        <title>Novas Tags input HTML 5</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form>
+           <!-- Associar a tag Label com os elementos-->
+           <!-- Quando utilizamos a tag label, que traduzindo significa rotulo,e o caractere for, com a palavra descrita
+            conseguimos o efeito de ao clicar na palavra, selecionamos a caixa de texto,também é uma boa opção para se 
+            aplicar em aplicativos móveis, pois deixa maior a área de seleção-->
+           
+            <!--Nome-->
+            <label for="nome"> Nome </label>                                                         
+            <input type="text" id="nome" autofocus>
+            <br><br>
+            
+            <!-- Novos Inputs e atributos HTML 5-->
+            <!--O que realmente faz diferença nos nóvos inputs, são os nóvos types que são criados para ele--> 
+            <!--Email-->
+            <label for="email"> Email </label> 
+            <input type="email" id="email" 
+            placeholder="teste@teste.com.br" required autofocus> <!-- o atributo required serve para informar que aquele 
+                                                                campo é obrigatório, e o autofocus, é para manter a caixa
+                                                                de texto em evidência, na cor azul-->
+            <br><br>
+            <!--Número-->
+           <label for="numero"> Número</label>
+            <input type="number" id="numero" min="5" max="10" step="2" autofocus> <!-- Colocando os caracteres min e max você também
+                                                                         consegue colocar valores minimos e máximos. E o step
+                                                                         serve para você dizer que quer que o número pule de 2 em
+                                                                         2-->
+            <br><br>
+            <!--URL-->
+            <label for="url">URL</label>
+            <input type="url" id="url" 
+            placeholder="Ex:http://www.meusite.com.br" autofocus> <!-- Neste caso, utilizamos o atributo
+                                                                  placeholder para dar um exmplo ao
+                                                                  usuário-->
+            <br><br>
+            <!--Pesquisar-->
+            <label for="pesquisa">Pesquisa</label>
+            <input type="search" id="pesquisa"  autofocus placeholder="ex:digite algo...">
+            <br> <br>
+            
+             <!--Range-->
+             <label for="range">Range</label>
+             <input type="range" id="range" min="5" max="10" value="5"> <!-- Colocando o atributo value com número 5, 
+                                                                        você consegue fazer com que o marcador do range,
+                                                                        fique extamente no meio-->
+             <br> <br>
+            
+            <!--Data-->
+             <label for="data">Data</label>
+             <input type="date" id="data"> 
+            <br> <br>
+             
+            <!--Cor-->
+             <label for="color">Cor</label>
+             <input type="color" id="cor"> 
+            <br> <br>
+            
+            <input type="submit" value="enviar">
+        </form>
+
+    </body>
+</html>

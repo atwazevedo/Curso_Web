@@ -1,0 +1,113 @@
+<!doctype.html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="C:\Users\Arthur\Google Drive\Curso WEB\ProjetoBootStrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\Arthur\Google Drive\Curso WEB\ProjetoBootStrap\css\bootstrap.css">
+
+    <title> Navegação Bootstrap</title>
+  </head>
+  <body>             
+    
+    <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+      <!--Criando o Botão Responsivo para reduzir a tela-->
+        <button type="button" class="navbar-toggle collapsed" 
+      data-toggle="collapse"data-target="#barra-navegacao">
+        <span class="sr-only">Alternar Menu</span>
+       
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="#" class="navbar-brand">LOGO</a> 
+    </div>
+    <!--Barra de Menu-->
+      <div class="collapse navbar-collapse" id="barra-navegacao">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">home</a></li>
+          <li><a href="#">clientes</a></li>
+          <li><a href="#">empresas </a></li>
+         <!--Efeito DropDown-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" 
+            data-toggle="dropdown">Minha Conta
+            <span class="caret"></span></a>      
+            <ul class="dropdown-menu">
+              <li><a href="#">Editar</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+    </nav>
+
+    <div class="container">      
+        <div class="borda">
+            <h1>Navegação BootStrap</h1>
+        </div>
+    
+    </div>
+   
+    <!--A classe "navbar-brand", serve para dar um estilo para logo
+    
+    Já a classe "nav navbar-nav", serve para dar uma formatação para
+    a lista que foi criada.
+
+    Para leva-la para direita se utiliza o "navbar-right"
+    
+    O efeito DropDown, serve para esconder algumas informações no menu,
+    e aparecerem quando existe uma interação, neste caso, quando se clica
+    na frase "Minha Conta" Uitiliza-se os caracteres no "a" com nome de 
+    class="dropdown-toggle", e logo após um outro atributo chamado 
+    data-toggle="dropdown", que seria uma função do bootstrap. Dentro da
+    tag "ul" deve-se colocar a class "dropdown-menu", que mo caso, servirá
+    para esconder as informações que se deseja mostrar com o clique do mouse.
+
+    Dentro da tag "a" que foi utilizada para colocar a informação de Minha 
+    Conta, utiliza-se uma outra tag "span", que sevirá para colocar a class
+    "caret", ela servirá para aparecer á seta do lado da frase Minha Conta, 
+    indicando que deve ser clicado.
+
+    CRIANDO O BOTÃO:
+    Criando o botão para interação do menu responsivo. Deve-se criar uma tag
+    "button", com o type button, e uma class chamada navbar-toggle collapsed
+    e um outro caractere chamado data-toggle com a informação "collapse", que
+    servirá para esconder o botão, só aparecendo quando a tela for reduzida.
+    
+    Para esconder o restante do menu quando a tela for minimazada, deve-se 
+    colocar dentro da div, um id chamado barra de navegação, e logo após, 
+    colocar na tag button, um caractere chamado data-target, em que você co-
+    olocará o ID criado. Neste caso, você só estará apontado qual a informação
+    que será escondida dentro do botão, porém o menu ainda continuará aparecendo.
+   
+    Após fazer estas partes, deve-se colocar dentro da tag button, uma tag 
+    span, com a class "icon-bar", que servirá para criar os "tracinhos", dentro
+    do botão.
+    
+    Para finalizar, deve-se criar dentro da div com o ID, uma outra class chamada
+    "collapse navbar-collpase", está sim servirá para esconder o menu quando a 
+    tela for reduzida.
+    
+    Após feito o botão, deve-se criar mais uma tag span, com a class "sr-only",
+    que servirá para leitores de tela, e colocar a informação Alternar Menu. 
+    Pois para os leitores de tela, somente aqueles traços criados não terão 
+    significado.
+    
+    -->
+    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

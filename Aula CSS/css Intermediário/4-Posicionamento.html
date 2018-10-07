@@ -1,0 +1,81 @@
+<!doctype.html>
+
+<html>
+    <head>
+    <title>Posicionamento</title>
+    <meta charset="utf-8"/>
+    <style type= "text/css">
+        body{
+        background:#61bd8c;
+        /*padding:10px;*/ /*Desta forma teremos um espaço maior da borda do site e a barra de conteúdo
+                      principal*/
+        }
+        
+        #conteudo-principal{
+           background:#FFFFFF;
+           padding:10px;
+           width:600px;
+           height:2500px;
+           margin:30px auto; /* Utilizando o termo auto no margin, a barra de menu ou conteudo
+                                principal, fará com que a barra fique com uma medida 
+                                proporcional ao tamanho da tela.*/
+           margin-top:120px;
+        /* position:relative;*/
+        }
+        .caixa{
+            background:#1e6f44;
+            color:#FFFFFF;
+            width:100px;
+            height:100px;
+        }
+        #relativo{
+            position: relative; /* Utilizando esta caracteristica position relative, você consegue 
+                                alinhar a sua div em relação a ela mesma. Desta forma utilizando
+                                os termos (left, top), a div "andara" de acordo com a sua posição
+                                inicial*/
+            left:-30px;
+            top:0px;
+            width: 660px; /* Colocando esta propriedade, é possível dar um efeito em que a barra
+                            fique para fora da caixa principal.*/
+        }
+        #absoluta{
+            position:absolute; /* Esta propriedade, inserida na div absolute, permite que a div
+                              fique de fora da div prinicipal. E fique absoluta em relação
+                              ao body, pois é o seu parente mais próximo. Porém caso coloque 
+                              o "position-relative" no ID conteúdo principal a posicão absoluta
+                              ficará em relação ao relative do ID conteúdo principal */
+            bottom:0;
+            right:30px;
+        }
+
+        #fixo{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            background:#000; /*O fixo faz com que a caixa acompanhe o corpo da página, e ficando 
+                                fixo de acordo com a posição informada, e mesmo que á pagina se m
+                                mova, eke continuara aparecendo na tela, de forma fixa. É uma
+                                funcionalaidade interessante, para montar menus.*/
+        }
+    </style>
+    </head>
+    
+    <body>
+        <div id="conteudo-principal">
+            <h1> Posicionamento</h1>
+           
+            <h4> Relative</h4>
+            <div id="relativo" class="caixa">Relative</div>
+
+            <h4>Absolute</h4>
+            <div id="absoluta" class="caixa">Absolute</div> 
+            <!--Utilizando o absolute a sua posição ficará posicionada de acordo com o seu parente
+            mais próximo, neste caso, o body. A partir do momento em que nós colocamos uma posição
+            no id conteudo principal, que seria "position:relative", o absolute ficara posicionado
+            de acordo com o id conteúdo principal-->
+            <h4>Fixed</h4>
+            <div id="fixo" class="caixa">Fixed</div>
+        
+    </body>
+</html>

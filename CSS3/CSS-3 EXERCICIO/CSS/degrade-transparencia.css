@@ -1,0 +1,55 @@
+#box{
+    width:300px;
+    height:300px;
+    padding:10px;
+    box-sizing: border-box;
+    float:left;
+    margin-left:25px;
+    background:url("C:/Users/Arthur/Google Drive/Curso WEB/CSS3/CSS-3/img/camera.png")
+}
+#box h1{
+    background:rgba(255,255,255,0.3);
+    border-bottom:1px solid white;
+    color:white;    
+}
+#box p{
+    text-align: justify;
+    color:white;
+}
+#box2{
+    width:300px;
+    height:300px;
+    padding:10px;
+    box-sizing:border-box;
+    margin-left:10px;
+    float: left;
+    background:linear-gradient(to right, gray,silver)
+}
+
+#box3{
+    width:300px;
+    height:300px;
+    padding:10px;
+    box-sizing:border-box;
+    margin-left:10px;
+    float: left;
+    background:linear-gradient(150deg, green,white)
+}
+
+#box4{
+    width:300px;
+    height:300px;
+    padding:10px;
+    box-sizing:border-box;
+    margin-left:10px;
+    float: left;
+    background:radial-gradient(silver,gray,black)
+}
+#box4 h1{
+    border-bottom:1px solid white;
+    color:white;
+}
+#box4 p{
+    text-align: justify;
+    color:white;
+}

@@ -1,0 +1,18 @@
+#box{
+    width:300px;
+    height:300px;
+    background:#b9c941;
+    padding:50px;
+    box-sizing:border-box; 
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box;  
+    border-radius:20px 80px;
+    /*-webkit-border-radius:20px 80px;
+    -moz-border-radius:20px 80px;*/
+}
+/*O box-sizing:border-box, serve para 
+manter somente o tamnanho definido padrão,
+sem contar com o padding, facilita para o 
+momento de fazer calculos. 
+O border-radius, serve para arredondar as 
+bordas do bloco.*/

@@ -1,0 +1,46 @@
+@keyframes animacao-box{
+    from {background:red;
+        border-radius:0px;
+        top:0;
+        left:0;
+    }
+    
+    to{background:yellow;
+        border-radius:300px;
+        top:200px;
+        left:200px;
+    }
+}
+/*keyframes animation-box é o código no qual utiliza-se
+para criar animação, e nele colocamos as propriedades
+devidas, para fazer o movimento que queremos.
+Neste caso, utilizou-se dois backgrounds, para mudar
+de uma cor para o outro. Além disso, foi colocado a 
+propriedade "border-radius", que aquela que arredonda
+as bordas do objeto.*/
+
+#box-animacao{
+    width:300px;
+    height:300px;
+    background:red;
+    position:relative;
+    animation-name: animacao-box;
+    animation-duration: 10s; /*Aqui se define o tempo de
+                            duração do efeito*/
+    animation-delay: 3s;/*Já nesta propriedade, é definido
+                        o tempo para iniciar o efeito*/
+    animation-iteration-count:2;/*Nesta propriedade, de-
+                                fine-se a quantidade de
+                                vezes que o efeito vai 
+                                acontecer*/
+    animation-direction: alternate;/* Esta propriedade faz
+                                   com que o efeito fique 
+                                   alternando, indo e voltando
+                                   de um objeto para o outro
+                                   sendo também de forma mais
+                                   suave*/
+    /*animation: animacao-box:5s 3s 2 alternate;*/ 
+    /*desta forma você consegue resumir todos os efeitos
+    em uma só linha de código.*/
+}
+

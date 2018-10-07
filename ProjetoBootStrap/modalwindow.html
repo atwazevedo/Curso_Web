@@ -1,0 +1,82 @@
+<!doctype.html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="C:\Users\Arthur\Google Drive\Curso WEB\ProjetoBootStrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\Arthur\Google Drive\Curso WEB\ProjetoBootStrap\css\bootstrap.css">
+
+    <title> BootStrap Modal</title>
+  </head>
+    <body>  
+    <div class="container">
+
+        <div class="page-header">
+        <h1>Bootstrap Modal Window</h1>
+        </div>
+        <button type="button" class="btn btn-info" data-toggle="modal"
+        data-target="#janela">
+        Logar
+        </button>
+      <!--Janela-->
+        <div class="modal" id="janela">
+          
+          <div class="modal-dialog">
+              <div class="modal-content">
+              
+             <!--Cabeçalho--> 
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+                </button>
+                <h4 class="modal-title">Efetuar Login</h4>
+                </div>
+
+                <div class="modal-body">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="digite
+                    seu email">
+                  </div>
+  
+                </div>
+
+                <div class="modal-footer">
+                Rodape
+               </div>
+
+              </div>
+          </div>
+
+        </div>
+    
+    </div>
+
+  <!--Quando é criado a classe modal, automáticamente é criado a janela 
+  de bloqueio, para que se possa criar a janela de login.
+  Utilizando a tag modal-dialog juntamente com a tag modal-content, você 
+  terá a janela na qual será necessária para aparecer o campo de login
+
+  Feito a primeira parte, você precisa criar 3 divs, em que cada uma 
+  irá conter, o header o body e o footer, nesta ordem.
+  O próximo passo é criar o "x" para fechar a caixa, utilizando a tag 
+  button juntamente com o type, e a class "close", dentro da tag button
+  crie também uma tag span, para que você possa colocar o icone de X, 
+  que pode ser colocado com o caractere "&times;" ou simplesmente com 
+  um glyph-icon. Após este processo, você deverá colocar mais uma propriedade
+  no button, chamada data-dismiss, com a classe modal, que servirá para
+  que o button entenda que o "x" deverá fechar.
+  
+  OBS: VALE LEMBRAR QUE ESTAS PROPRIEDADES ALÉM DAS CLASS´S DATA-DISMISS, 
+  DATA-TARGET, DATA-TOGGLE, SÃO PROPRIEDADES DO PRÓPRIO BOOTSTRAP.-->
+
+    </body>
+    <!-- Optional JavaScript -->
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="C:\Users\Arthur\Google Drive\Curso WEB\ProjetoBootStrap\js\bootstrap.min.js"></script>
+  </body>
+</html>
