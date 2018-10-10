@@ -1,0 +1,71 @@
+<!doctype.html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="C:\Users\Arthur\Google Drive\Curso WEB\ProjetoBootStrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <title> Alerta</title>
+  </head>
+    <body>  
+    <div class="container">
+     <div class="page-header">
+     <h1> BootStrap Alert</h1>
+     </div>
+
+        <div class="alert alert-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+        </button>
+        <strong>Success</strong> Teste !!   
+        </div>
+
+        <div class="alert alert-info" role="alert">
+        <!--Acessible Rich Internet Aplications (ARIA)-->
+        <button type="button" class="close" data-dismiss="alert"
+        aria-label="fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Info</strong> Teste !!   
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+        </button>
+        <strong>Warning</strong> Teste !!   
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+        </button>
+        <strong>Danger</strong> Teste !!   
+        </div>    
+        
+    </div>
+
+    <!--O atributo role, serve para que os programas de leitura de tela 
+    funcionem de forma correta, e neste caso, servirá para que os
+    leitores identifiquem o aterta. Estes leitores servem para pessoas
+    com deficiência visual.
+    Pode-se também utilizar "aria" que serve para que os leitores de 
+    tela, identifiquem o caractere que representa o "x", esta tag só é 
+    necessária para o caso da utilização deste caractere "&times;", que 
+    servirá para os leitores identificarem o "x". E utilizando o
+    caractere aria-hidden=true, fará com que o leitor mostre a palvra
+    "fechar" do arial-label, ao invés do "x"-->
+    
+
+    </body>
+    <!-- Optional JavaScript -->
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

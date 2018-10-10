@@ -22,9 +22,9 @@
         Logar
         </button>
       <!--Janela-->
-        <div class="modal" id="janela">
+        <form class="modal fade" id="janela">
           
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-sm">
               <div class="modal-content">
               
              <!--Cabeçalho--> 
@@ -34,23 +34,31 @@
                 </button>
                 <h4 class="modal-title">Efetuar Login</h4>
                 </div>
-
+              <!--Corpo-->
                 <div class="modal-body">
                   <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="digite
-                    seu email">
+                    <input type="email" class="form-control" id="email" placeholder="digite seu email">
                   </div>
-  
-                </div>
 
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="email" placeholder="digite sua senha">
+                  </div>
+                </div>
+              <!--Rodape-->
                 <div class="modal-footer">
-                Rodape
-               </div>
+                  <button type="submit" class="btn btn-primary">
+                  Logar
+                  </button>
+
+                  <button type="button" class="btn btn-default" data-dismiss="modal">
+                   Cancelar
+                  </button> 
+                </div>
 
               </div>
           </div>
 
-        </div>
+        </form>
     
     </div>
 
@@ -68,7 +76,21 @@
   um glyph-icon. Após este processo, você deverá colocar mais uma propriedade
   no button, chamada data-dismiss, com a classe modal, que servirá para
   que o button entenda que o "x" deverá fechar.
-  
+
+  Após estas parte, você deverá criar a parte do corpo, em que será necessário
+  colocar as caixas de email e senha. Utilizando input do tipo email e senha.
+
+  Depois, deve-se colocar no rodapé o botão de login e cancelar.
+  O primeiro deve-se utilizar a tag button com o type button, e a class
+  "btn-btn-primary, em que deixará o botão com o estilo azul". Depois o botão
+  cancelar, deverá conter aa class "btn-btn-default" em que deixará a o botão
+  cinza, e a propriedade "data-target="modal", em que servirá para fechar a 
+  caixa quando for clicado.
+
+  ERRATA: Coloque a tag "form" lá no incio no lugar da div que servirá para
+  abrir a janela de login e senha. e na tag button para login coloque o tipo
+  submit, em que quando o botão for clicado, ele vai ler o formulário.
+
   OBS: VALE LEMBRAR QUE ESTAS PROPRIEDADES ALÉM DAS CLASS´S DATA-DISMISS, 
   DATA-TARGET, DATA-TOGGLE, SÃO PROPRIEDADES DO PRÓPRIO BOOTSTRAP.-->
 
