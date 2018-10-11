@@ -1,0 +1,77 @@
+<!doctype.html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="C:\Users\Arthur\Google Drive\Curso WEB\ProjetoBootStrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <title>Tooltip e Popover</title>
+  </head>
+    <body>  
+    
+    <div class= "container">
+    
+        <div class="container">
+        <h1> BootStrap Tooltip e Popover</h1>
+        </div>
+
+        <h3>Tooltip</h3>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="Right"
+        title="Detalhes do Browser">Dica</button>
+        <br><br>
+
+        <div class="btn-toolbar">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default" data-toggle="tooltip" 
+                data-placement="Right" title="Tocar Musica">
+                  <span class="glyphicon glyphicon-play"></span>
+                </button>
+
+                <button type="button" class="btn btn-default" data-toggle="tooltip" 
+                data-placement="Right" title="Pausar a Musica">
+                  <span class="glyphicon glyphicon-pause"></span>
+                </button>
+
+                <button type="button" class="btn btn-default" data-toggle="tooltip" 
+                data-placement="Right" title="Parar a Musica">
+                  <span class="glyphicon glyphicon-stop"></span>
+                </button>
+
+              </div>
+
+        </div>
+        <h3>Popover</h3>
+        <button type="button" class="btn-btn-lg btn-danger" data-toggle="popover" title="Detalhes!"
+         data-content="Este texto é um teste!=D" data-placement="right">
+          Detalhes
+        </button>
+    </div>
+
+
+   <!-- O caractere data-placement serve para definir a posição em que vai se encontrar o tooltip.
+    Vale ressaltar que o tooltip ele não é inicializado sozinho, ou seja, simplesmente coloca-lo no 
+    código, neste caso, button, não vai fazer com que apareça quando passar o mouse em cima do botão,   
+    é preciso inicializa-lo.
+    O popover, tem o mesmo princípio do tooltip, porém, para ele funcionar, é necessário que se clique
+    no botão antes, e ele também precisa ser incializado pelo script.
+    Para inicializar o tooltip, é necessário colocar a linha de código script. Esta linha está escrita
+  logo abaixo do script do jquery e o mesmo vale para o popover.. --> 
+    </body>
+    <!-- Optional JavaScript -->
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   
+   <script type="text/javascript">
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="popover"]').popover()
+        })
+   </script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
