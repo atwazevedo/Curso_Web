@@ -19,18 +19,58 @@
         <p class="lead"> Alterne facilmente entre conteúdos</p>
         </div><!--Page Header-->
     
-        <!--Criação de Abas-->
+        <!--Criação de Abas--> <!--OBS: Pode-se utilizar ao invés da nav-tabs, utilizar nav-pills
+        que dará um estilo azul para a caixa, em um molde de menu-->
         <ul class="nav nav-tabs" role="tablist">
-        <li class="active"><a href="">Informações</a></li>
-        <li><a href="">Avaliações</a></li>
-        <li><a href="">Compre também</a></li>
+        <li class="active"><a href="#info" role="tab" data-toggle="tab">Informações</a></li>
+        <li><a href="#avaliacoes" role="tab" data-toggle="tab">Avaliações</a></li>
+        <li><a href="#compretambem" role="tab" data-toggle="tab">Compre também</a></li>
         </ul>
 
         <!--Conteúdo das Barras-->
+        <div class="tab-content">
+          
+          <!--Aba Informações-->
+          <div class="tab-pane active" role="tabpanel" id="info">
+            <h3>Informações</h3>
+            <p>Lorem ipsum dolorem sit amet, informações</p>
+          </div>
+          <!--Aba Avaliações-->
+          <div class="tab-pane" role="tabpanel" id="avaliacoes">
+            <h3>Avaliações</h3>
+            <p>Lorem ipsum dolorem sit amet, avaliações</p>
+          </div>
+          <!--Aba Compre Também-->
+          <div class="tab-pane" role="tabpanel" id=compretambem>
+            <h3>Compre Também</h3>
+            <p>Lorem ipsum dolorem sit amet, Compre Também</p>
+          </div>
 
+        </div>
     
        
     </div>
+
+    <!--Iniciando este arquvio html, já se vê uma class chamada "lead", que nada mais é
+    do que um arquivo no qual, serve para formatar o pagrafo escrito.
+    
+    O próximo passo foi criar a class"nav nav-tabs" dentro da tag "ul", que já cria uma 
+    estrutura para criar as abas de navegação, e um caractere rol com a class tablist
+    Dentro da ul, cria-se uma tag li e dentro dela, cria-se uma tag de links com href, que 
+    será o local onde apontaremos para a leitura das propriedades com informações. Além
+    disso, dentro da li foi colocado uma class chamada de ativa, que no caso, servirá para 
+    informar qual aba será "ativada", incialemente.
+  
+    Agora, passaremos para a criação dos conteúdos que serão apresentados em cada aba.
+    E será necessário, colocar uma div com a class "tab-content", que é a estrutura na qual
+    as divs com os conteúdos propriamente ditos serão inseridos
+    
+    Agora, será criado as estruturas onde colocaremos as informações, inciando com uma div, 
+    que terá a class "tab-pane", que será o painel da aba, e a infomação "active"
+  
+    Após feito as informações deve-se colocar criar um id, que será reposicionado como link 
+    na estrutura das abas de navegação. E depois, colocar o caractere data-toggle com a class,
+    "tab" que irá reconhecer os conteúdos em suas respectivas abas.-->
     </body>
     <!-- Optional JavaScript -->
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
