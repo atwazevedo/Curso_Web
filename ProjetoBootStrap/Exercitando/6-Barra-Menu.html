@@ -1,0 +1,72 @@
+<!doctype.html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/css/bootstrap-theme.min.css">
+    
+    <title> Navegação Bootstrap</title>
+  </head>
+  <body>             
+        <!--Barra de Navegação-->
+    <nav class="navbar navbar-default">
+    <div class="container">
+        
+        <div class="navbar-header">
+       
+        <!--Botão Responsivo do Menu (Minha Conta)-->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+        <span class="sr-only"> Alternar Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button> <!--Passo para Barra responsiva para menu (Após Menu Criado)-->
+        
+        <a href="#" class="navbar-brand">LOGO</a>
+        </div>
+       
+      <div class="collapse navbar-collapse" id="barra-navegacao"> 
+        <!--Deve-se Colocar o id "barra de navegação", somente ao criar o botão responsivo-->   
+        
+        <ul class="nav navbar-nav navbar-right">
+        
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Empresas</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Produtos</a></li>
+            
+            <!--Minha Conta com Efeito Drop-Down (Continuação da Barra Menu-->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Minha Conta <span class="caret"></span> <!--Este span com a class carret serve para criar a seta ao lado-->
+                </a> 
+                    <ul class="dropdown-menu"> <!--Colocar o menu interno do minha conta-->
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Criar Conta</a></li>
+                    </ul>
+            </li>
+        
+        </ul>
+        
+      </div>
+
+    </div>
+   </nav>
+   <div class="container">
+       <div class="page-header">
+        <h1> Navegação BootStrap</h1>
+       </div>
+   </div> 
+
+    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
