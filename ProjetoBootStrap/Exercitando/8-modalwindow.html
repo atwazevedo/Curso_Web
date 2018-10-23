@@ -1,0 +1,59 @@
+<!doctype.html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/css/bootstrap.css">
+
+    <title>2-BootStrap Modal</title>
+  </head>
+    <body>  
+        <div class="container">
+            <div class="page-header">
+                <h1>BootStrap Modal Window</h1>
+            </div>
+            <button type="button" class="btn btn-info" data-toggle="modal"
+            data-target="#janela">Logar</button> 
+           <!--Janela-->
+            <div class="modal" id="janela"> <!--Este é o primeiro passo, criar a modal com ligado ao botão-->
+                <div class="modal-dialog"> <!--Segundo passo é montar a base onde ficará a "caixa"-->
+                    <div class="modal-content"> <!-- Terceiro passo, modal content, já é a estrutura da caixa proprimanete dita-->
+                        <!--INFORMAÇÕES CONTIDAS NA JANELA-->
+                        
+                        <!--Cabeçalho-->
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">                             <span>&times;</span>
+                        </button>
+                        <h4 class="modal-title">Efetuar login</h4>
+                        </div>
+                        <!--Data-dismiss serve para fazer o botão fechar, funcionar-->
+                        
+                        <!--Corpo-->
+                        <div class="modal-body">
+                        Corpo
+                        </div>
+
+                        <!--Roda-pé-->
+                        <div class="modal-footer">
+                        Roda-pé
+                        </div>
+
+                    </div> <!--Fim da Div de informações-->
+
+                </div><!--Final Div Dialog-->
+                
+            </div><!--Final Div Modal-->
+
+        </div>
+ 
+    </body>
+    <!-- Optional JavaScript -->
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
