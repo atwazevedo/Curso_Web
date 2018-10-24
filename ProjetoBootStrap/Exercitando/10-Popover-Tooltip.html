@@ -1,0 +1,70 @@
+<!doctype.html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/css/bootstrap.min.css">
+
+    <title>Tooltip e Popover</title>
+  </head>
+    <body>  
+    <div class="container">
+    
+        <div class="container">
+        <h1>BootStrap Tooltip e Popover</h1>
+        </div>
+
+        <h3>Tooltip</h3>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right"
+        title="Detalhes do Browser">
+        Button
+        </button>
+        <br><br>
+        <div class="btn-toolbar"> <!--Barra de ferramentas-->
+            <div class="btn-group">
+            <!--Botão de Play-->
+            <button type="button" class="btn btn-default" data-toggle="tooltip" 
+            data-placement="right" title="Tocar Música">
+            <span class="glyphicon glyphicon-play"></span>
+            </button>
+            
+            <!--Botão de Pausa-->
+            <button type="button" class="btn btn-default" data-toggle="tooltip" 
+            data-placement="right" title="Pausar Música">
+            <span class="glyphicon glyphicon-pause"></span>
+
+            <!--Botão de Stop-->
+            <button type="button" class="btn btn-default" data-toggle="tooltip"
+            data-placement="right" title="Para a Música">
+            <span class="glyphicon glyphicon-stop"></span>
+            </button>
+            </div><!--Final da Barra de Ferramentas-->
+        
+        </div>
+        <h3>Popover</h3>
+        <button type="button" class="btn-btn-lg btn-danger" data-toggle="popover"
+        title="Detalhes!" data-content="Este texto é um teste !!" data-placement="right">
+        Detallhes
+        </button>
+    </div> 
+    </body>
+    <!-- Optional JavaScript -->
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    })
+
+    </script>
+  
+   
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

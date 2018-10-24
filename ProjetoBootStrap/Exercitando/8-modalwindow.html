@@ -18,14 +18,16 @@
             <button type="button" class="btn btn-info" data-toggle="modal"
             data-target="#janela">Logar</button> 
            <!--Janela-->
-            <div class="modal" id="janela"> <!--Este é o primeiro passo, criar a modal com ligado ao botão-->
-                <div class="modal-dialog"> <!--Segundo passo é montar a base onde ficará a "caixa"-->
+            <form class="modal fade" id="janela"> <!--Este é o primeiro passo, criar a modal com ligado ao botão
+                                                    E o "fade", é utilizado para abrir e fechar a janela suavemente-->
+                <div class="modal-dialog modal-sm"> <!--Segundo passo é montar a base onde ficará a "caixa"-->
                     <div class="modal-content"> <!-- Terceiro passo, modal content, já é a estrutura da caixa proprimanete dita-->
                         <!--INFORMAÇÕES CONTIDAS NA JANELA-->
                         
                         <!--Cabeçalho-->
                         <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">                             <span>&times;</span>
+                        <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
                         </button>
                         <h4 class="modal-title">Efetuar login</h4>
                         </div>
@@ -33,19 +35,37 @@
                         
                         <!--Corpo-->
                         <div class="modal-body">
-                        Corpo
+                        
+                        <div class="form-group">
+                        <input type="email" class="form-control" id="email" 
+                        placeholder="Digite seu e-mail">
+                        <br>
+                        <input type="password" class="form-control" id="senha"
+                        placeholder="digite sua senha">
+                        </div>
+                        
                         </div>
 
                         <!--Roda-pé-->
                         <div class="modal-footer">
-                        Roda-pé
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancelar
+                        </button>
+
+                        <button type="submit" class="btn btn-primary">
+                        Logar
+                        </button>
+                        <!--Utiliza-se o type submit, para que o botão submeta á fazer algo. No
+                        caso, entrar em algum lugar. E colocar a tag form, ao invés de Div, pois
+                        assim o navegador entenderá que está sendo preenchido um formulário para
+                        ser capturado as informações, e assim acessar alguma outra área.-->
                         </div>
 
                     </div> <!--Fim da Div de informações-->
 
                 </div><!--Final Div Dialog-->
                 
-            </div><!--Final Div Modal-->
+            </form><!--Final Div Modal-->
 
         </div>
  
