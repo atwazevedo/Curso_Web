@@ -9,22 +9,49 @@
     <link rel="stylesheet" href="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/css/bootstrap.css">
     <link rel="stylesheet" href="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/css/bootstrap.min.css">
 
-    <title>Tabs Bootstrap</title>
+    <title>2-Tabs Bootstrap</title>
   </head>
     <body>  
     <div class="container">
         <div>
-        <h1>BootStrap Tabs</h1>
-        <p class="lead">Alterne Facilmente entre conteúdos</p>
+          <h1>BootStrap Tabs</h1>
+          <p class="lead">Alterne Facilmente entre conteúdos</p>
         </div>
+        <!--BARRA DE NAVEGAÇÃO-->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active"><a href="#info" role="tab" data-toggle="tab">Informações</a></li>
+          <li><a href="#avaliacoes" role="tab" data-toggle="tab">Avaliações</a></li>
+          <li><a href="#compretambem" role="tab" data-toggle="tab">Compre Também</a></li>
+        </ul>
+    
+
+        <!--CONTEÚDO DAS BARRAS--> 
+        <div class="tab-content">
+          <!--Aba informações-->
+          <div class="tab-pane active" role="tabpanel" id="info">
+            <h3>Informações</h3>
+            <p>Lorem impsum dolorem sit amet, informações</p>
+          </div>
+
+          <!--Aba Avaliações-->
+          <div class="tab-pane" role="tabpanel" id="avaliacoes">
+            <h3>Avaliações</h3>
+            <p>Lorem impsum dolorem sit amet, informações</p>
+          </div>
+          <!--Aba Compre Também-->
+          <div class="tab-pane" role="tabpanel" id="compretambem">
+            <h3>Compre Também</h3>
+            <p>Lorem impsum dolorem sit amet, informações</p>
+          </div>
+        </div>
+
     </div>
-  
     </body>
     <!-- Optional JavaScript -->
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    
    <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="/home/arthur/GitHub_Clone/Curso_Web/ProjetoBootStrap/js/bootstrap.min.js"></script>
   </body>
 </html>
