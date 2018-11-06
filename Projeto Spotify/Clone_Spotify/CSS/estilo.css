@@ -42,14 +42,15 @@ nav.navbar-transparente{
     margin:16px 10px;
 }
 
-.navbar-inverse .navbar-nav>li>a { /*Esta propriedade está informando que deve-se formatar a tag "a", que
+.navbar-inverse .navbar-nav>li>a, footer .nav a { /*Esta propriedade está informando que deve-se formatar a tag "a", que
                                     no caso, é filha da tag "li", que por sua vez está dentro das classes
                                     navbar-inverse e navbar-nav. Note que o simbolo > indica a cadeia*/
 color:white;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover{
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
     color:#9bf0e1;
+    background: none;
 }
 
 /*--------Capa Principal do Site---------*/
@@ -137,6 +138,10 @@ footer{
     position:relative;
 }
 
+.item-rede-social{
+    float:right;
+}
+
 /*------------------Tipo-Grafia-------------*/
 
 h1{
@@ -156,6 +161,12 @@ h3{
     font-size: 35px;
     font-weight: 700;
     letter-spacing:-0.04em;
+}
+
+#rodape h4{
+    color:#919496;
+    font-size:12px;
+    text-transform: uppercase;
 }
 
 #serviços h2,#serviços h3{
